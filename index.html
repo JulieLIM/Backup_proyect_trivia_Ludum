@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Trivia</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<p id="timing"></p>
+
+
+	<div id="bienvenida">
+		<h1>LUDUM</h1>
+		<h2> Bienvenidos a la trivia del momento</h2>
+		<div id="box">
+			<input id="name" type="text" placeholder = "¿Cual es tu nombre?">
+        <br/>
+        <br/>
+        <button class ="buttonSmall" onclick = "start()">Jugar</button>
+       </div>
+     </div>
+    
+    
+     <div id="eleccionTema" style="display:none">
+        <p id="saludo">Hola</p>
+        <p class = "question">¿Qué tema te interesa?</p>
+        <button onclick = "movies()">Peliculas</button>
+        <button onclick = "countries()">Paises</button>
+     </div>
+    
+    
+     <div id= "movie1" style="display:none">
+       <p> ¿Quién fue el protagonista de "Titanic"?</p>
+       
+       <button onclick = "answerMovie1(false)">Clint Eastwood </button>
+       <br/>
+       <button onclick = "answerMovie1(false)">Brad Pitt </button>
+       <br/>
+       <button onclick = "answerMovie1(true)">Leonardo Di Caprio </button>
+     </div>
+
+     <div id= "movie2" style="display:none">
+       <p> ¿Quién fue el protagonista de "Matrix"?</p>
+       <button onclick = "answerMovie2(true)">Keanu Reeves </button>
+       <br/>
+       <button onclick = "answerMovie2(false)">Ryan Gosling </button>
+       <br/>
+       <button onclick = "answerMovie2(false)">Ryan Reynolds </button>
+     </div>
+
+     <div id= "movie3" style="display:none">
+       <p> ¿Quién fue el protagonista de "Diario de una pasión"?</p>
+       <button onclick = "answerMovie3(true)">Ryan Gosling </button>
+       <br/>
+       <button onclick = "answerMovie3(false)">George Clooney </button>
+       <br/>
+       <button onclick = "answerMovie3(false)">Gael Garcia </button>
+     </div>
+  
+    
+     <div id= "countries1" style="display:none">
+       <p> ¿En que país queda la ciudad luz?</p>
+       <button onclick = "answerCountries1(true)">Francia</button>
+       <br/>
+       <button onclick = "answerCountries1(false)">Brasil </button>
+       <br/>
+       <button onclick = "answerCountries1(false)">Croacia </button>
+     </div>
+
+     <div id= "countries2" style="display:none">
+       <p> ¿En que pais queda Stonehenge?</p>
+       <button onclick = "answerCountries2(false)">Irlanda </button>
+       <br/>
+       <button onclick = "answerCountries2(false)">Suecia </button>
+       <br/>
+       <button onclick = "answerCountries2(true)">Inglaterra </button>
+     </div>
+
+     <div id= "countries3" style="display:none">
+       <p> ¿En que país se encuentra la plata de mejor calidad?</p>
+       <button onclick = "answerCountries3(false)">Turquía </button>
+       <br/>
+       <button onclick = "answerCountries3(false)">Checoslovaquia </button>
+       <br/>
+       <button onclick = "answerCountries3(true)">Perú </button>
+     </div>
+    
+    
+     <div id= "resultados" style="display:none">
+       <p class ="title">Resultados! </p>
+       <div class = "columna">
+        <p id = "answer1"></p>
+        <p id = "answer2"></p>
+        <p id = "answer3"></p>
+       </div>
+       <div class = "columna">
+        <p id= "correctas"> </p>
+       </div>
+       <div class="clear"></div>
+       <p class ="title" >Juega otra vez!!!</p>
+       <button onclick = "movies()">Peliculas</button>
+       <button onclick = "countries()">Paises</button>
+     </div>
+
+
+    <script src="app.js"></script>  
+  </body>
+</html>

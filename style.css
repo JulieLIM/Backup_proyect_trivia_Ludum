@@ -1,0 +1,111 @@
+body {
+  background: rgb(238, 245, 235);
+  color: rgb(236,97,16);
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Roboto';
+}
+
+h1 {
+  color: rgb(82,243,8);
+  text-align: center;
+  font-size: 45px;
+  font-family: "Roboto"
+  margin-top: 500px;
+}
+
+h2 {
+  background:rgb(239, 243, 238);
+  color: rgb(236, 97, 16);
+  text-align: center;
+  font-size: 30px;
+  font-family: "Roboto"
+  margin-top: 200px;
+  font-weight: light;
+}
+
+#saludo {
+  font-weight: bold;
+  font-size: 60px;
+  font-family: 'Roboto';
+}
+
+input{
+  border: 4px solid #DFE1E6;
+}
+
+name {
+  margin-top: 300px;
+}
+
+p {
+  background: rgb(248, 245, 243);
+  color: rgb(236, 97, 16);
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 25px;
+}
+
+.question {
+  background: rgb(248, 245, 243);
+  color: rgb(236, 97, 16);
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto';
+}
+
+
+button {
+  background-color: rgb(22, 179, 48); 
+  border: white;
+  color: white;
+  padding: 12px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: line-block;
+  border-radius: 5px;
+  font-size: 13px;
+  transition-duration: 0.4s;
+  margin: 10px 10px;
+  width:200px; 
+}
+
+.buttonSmall{
+  width:150px;
+}
+
+.buttonSmall :hover{
+  width: 200px;
+}
+
+
+button:hover{
+  background-color: #008F20;
+}
+
+.columna {
+  width: calc(50% - 10px);
+ float: left;
+ border: 1px solid rgb(82,243,8);
+ box-sizing:border-box;
+ margin: 0 5px;
+}
+
+.columna p{
+  font-size: 18px;
+}
+
+.clear{
+  clear:both;
+}
+
+.title {
+  color: #110866;
+  font-weight: bold;
+}
+
+#timing {
+  position:fixed;
+  right: 10px;
+  bottom: 10px;
+}
